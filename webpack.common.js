@@ -32,7 +32,7 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                use: ["raw-loader", "sass-loader"]
+                use: ["style-loader", "css-loader", "sass-loader"]
             }
         ]    
     },
@@ -47,4 +47,8 @@ module.exports = {
           ]
         })
     ]
+
+
+        
+      
 }

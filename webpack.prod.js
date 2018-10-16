@@ -1,4 +1,5 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 
@@ -11,6 +12,15 @@ module.exports = merge(common, {
     output: {
         path: path.resolve(__dirname,'./dist'),
         filename: '[name].js'
-    }
+    },
 
+    plugins: [
+        new CopyWebpackPlugin([ 
+        { 
+            from: 'src/assets', 
+            to: 'assets'
+        }
+          ])
+      ]
+    
 });

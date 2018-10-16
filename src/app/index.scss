@@ -1,1 +1,7 @@
-$cor-primaria: orange;
+@import '../styles.scss'; // scss variaveis
+@import '../global.scss'; //definições globais
+
+/*   SCSS COMPONENTES  */
+@import './cabecalho/cabecalho.componente.scss';
+@import './rodape/rodape.componente.scss';
+
