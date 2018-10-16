@@ -7,7 +7,6 @@ let x = new Cabecalho();
 let y = new Rodape();
 
 
-x.criarElemento();
 x.exibeNumero()
 y.criarElemento();
 
